@@ -1,0 +1,111 @@
+[
+    {
+      "id": 1,
+      "img": "https://i.ibb.co/wdJ5fQ0/Education.png",
+      "title": "Children's Education Fund",
+      "type": "Education",
+      "description": "Support underprivileged children's education and give them a brighter future.",
+      "price": 50,
+      "color": "#FF444A"
+    },
+    {
+      "id": 2,
+      "img": "https://i.ibb.co/0y1PhTD/Health.png",
+      "title": "Clean Water Initiative",
+      "type": "Health",
+      "description": "Provide clean and safe drinking water to communities in need.",
+      "price": 25,
+      "color": "#0052FF"
+    },
+    {
+      "id": 3,
+      "img": "https://i.ibb.co/Vx2MDJy/Food.png",
+      "title": "Food for the Homeless",
+      "type": "Food",
+      "description": "Help feed homeless individuals and families in your local area.",
+      "price": 10,
+      "color": "#F87147"
+    },
+    {
+      "id": 4,
+      "img": "https://i.ibb.co/824hShh/Clothing.png",
+      "title": "Animal Shelter Support",
+      "type": "Clothing",
+      "description": "Provide shelter, food, and care for abandoned and abused animals.",
+      "price": 30,
+      "color": "#79C23F"
+    },
+    {
+      "id": 5,
+      "img": "https://i.ibb.co/wdJ5fQ0/Education.png",
+      "title": "Environmental Conservation",
+      "type": "Education",
+      "description": "Support initiatives to protect our planet and preserve natural habitats.",
+      "price": 15,
+      "color": "#FF444A"
+    },
+    {
+      "id": 6,
+      "img": "https://i.ibb.co/0y1PhTD/Health.png",
+      "title": "Medical Supplies for Clinics",
+      "type": "Health",
+      "description": "Donate medical supplies to clinics in underserved areas to improve healthcare access.",
+      "price": 40,
+      "color": "#0052FF"
+    },
+    {
+      "id": 7,
+      "img": "https://i.ibb.co/824hShh/Clothing.png",
+      "title": "School Uniforms for Kids",
+      "type": "Clothing",
+      "description": "Provide school uniforms to children in need to boost their confidence and attendance.",
+      "price": 20,
+      "color": "#79C23F"
+    },
+    {
+      "id": 8,
+      "img": "https://i.ibb.co/Vx2MDJy/Food.png",
+      "title": "Meals for Elderly Citizens",
+      "type": "Food",
+      "description": "Deliver nutritious meals to elderly citizens who may be homebound or isolated.",
+      "price": 12,
+      "color": "#F87147"
+    },
+    {
+      "id": 9,
+      "img": "https://i.ibb.co/wdJ5fQ0/Education.png",
+      "title": "Scholarships for Higher Education",
+      "type": "Education",
+      "description": "Support talented students by providing scholarships for their higher education.",
+      "price": 60,
+      "color": "#FF444A"
+    },
+    {
+      "id": 10,
+      "img": "https://i.ibb.co/wdJ5fQ0/Education.png",
+      "title": "Wildlife Conservation",
+      "type": "Education",
+      "description": "Protect endangered species and their habitats through wildlife conservation efforts.",
+      "price": 35,
+      "color": "#FF444A"
+    },
+    {
+      "id": 11,
+      "img": "https://i.ibb.co/0y1PhTD/Health.png",
+      "title": "Emergency Relief Fund",
+      "type": "Health",
+      "description": "Provide immediate assistance during disasters and emergencies.",
+      "price": 50,
+      "color": "#0052FF"
+    },
+    {
+      "id": 12,
+      "img": "https://i.ibb.co/Vx2MDJy/Food.png",
+      "title": "Hunger Alleviation Program",
+      "type": "Food",
+      "description": "Support programs that combat hunger and food insecurity in your community.",
+      "price": 18,
+      "color": "#F87147"
+    }
+  ]
+  

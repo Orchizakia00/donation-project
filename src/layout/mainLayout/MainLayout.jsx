@@ -3,10 +3,14 @@ import Navbar from "../../components/header/Navbar";
 
 const MainLayout = () => {
     return (
-        <div className="max-w-[1300px] mx-auto">
-            <Navbar></Navbar>
-            <Outlet></Outlet>
-        </div>
+        <>
+            <div className="max-w-[1300px] mx-auto">
+                <Navbar></Navbar>
+            </div>
+            <div className="max-w-[1300px] mx-auto">
+                <Outlet></Outlet>
+            </div>
+        </>
     );
 };
 

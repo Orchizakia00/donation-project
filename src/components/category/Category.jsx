@@ -1,21 +1,28 @@
 /* eslint-disable react/prop-types */
 
+import { Link } from "react-router-dom";
+
 const Category = ({ category }) => {
 
-    const { title, type, color, img } = category;
+    const { id, title, type, color, img } = category;
 
-    // const validColorClass = color ? `bg-${color}` : '';
+    const cardTitleStyle = {
+        backgroundColor: color,
+
+    };
 
     return (
-        <div className="card bg-base-100 shadow-xl">
-            <figure><img src={img} alt="Shoes" /></figure>
-            <div className={`card-body bg-${color}`}>
-                <h2 className={`card-title p-2 ${color}`}>
-                    {type}
-                </h2>
-                <p>{title}</p>
+        <Link to={`/card/${id}`}>
+            <div className="card bg-base-100 shadow-xl">
+                <figure><img src={img} alt="Shoes" /></figure>
+                <div className="card-body rounded-b-xl" style={cardTitleStyle}>
+                    <p className="w-fit p-2" style={cardTitleStyle}>
+                        {type}
+                    </p>
+                    <p>{title}</p>
+                </div>
             </div>
-        </div>
+        </Link>
     );
 };
 

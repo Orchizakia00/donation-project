@@ -4,16 +4,16 @@
       "img": "https://i.ibb.co/wdJ5fQ0/Education.png",
       "title": "Children's Education Fund",
       "type": "Education",
-      "description": "Support underprivileged children's education and give them a brighter future.",
+      "description": "Support underprivileged children's education and give them a brighter future. Your contribution to the Children's Education Fund will help provide access to quality education, school supplies, and educational resources for disadvantaged youth. By investing in their education, you empower these children to break the cycle of poverty and reach their full potential. Together, we can create a world where every child has the opportunity to learn, grow, and succeed. Join us in making a difference in the lives of these young learners and shaping a better tomorrow.",
       "price": 50,
-      "color": "#FF444A" 
+      "color": "#FF444A"
     },
     {
       "id": 2,
       "img": "https://i.ibb.co/0y1PhTD/Health.png",
       "title": "Clean Water Initiative",
       "type": "Health",
-      "description": "Provide clean and safe drinking water to communities in need.",
+      "description": "Provide clean and safe drinking water to communities in need. Access to clean water is a basic human right, yet millions of people around the world lack this essential resource. With your support, the Clean Water Initiative aims to install water purification systems, drill wells, and distribute water filters to ensure that everyone has access to clean and safe drinking water. By addressing waterborne diseases and improving overall health, we can save lives and enhance the well-being of communities in need. Join us in this vital mission to bring clean water to those who need it most.",
       "price": 25,
       "color": "#0052FF"
     },
@@ -22,7 +22,7 @@
       "img": "https://i.ibb.co/Vx2MDJy/Food.png",
       "title": "Food for the Homeless",
       "type": "Food",
-      "description": "Help feed homeless individuals and families in your local area.",
+      "description": "Help feed homeless individuals and families in your local area. Hunger is a harsh reality for many people, including those who are homeless and struggling to find their next meal. The Food for the Homeless program aims to provide nutritious meals, food packages, and support services to those experiencing homelessness. Your donation can make a significant impact by ensuring that no one goes to bed hungry. Together, we can bring comfort and nourishment to those in need and work towards ending hunger in our communities.",
       "price": 10,
       "color": "#F87147"
     },
@@ -31,7 +31,7 @@
       "img": "https://i.ibb.co/824hShh/Clothing.png",
       "title": "Animal Shelter Support",
       "type": "Clothing",
-      "description": "Provide shelter, food, and care for abandoned and abused animals.",
+      "description": "Provide shelter, food, and care for abandoned and abused animals. Our furry friends deserve love and care, and the Animal Shelter Support program is dedicated to ensuring that they receive just that. Your contribution helps provide shelter, medical care, and nutritious food to animals in need. By supporting this program, you're giving abandoned and abused animals a second chance at a happy and healthy life. Join us in making a difference for these voiceless creatures and giving them the love and care they deserve.",
       "price": 30,
       "color": "#79C23F"
     },
@@ -40,7 +40,7 @@
       "img": "https://i.ibb.co/wdJ5fQ0/Education.png",
       "title": "Environmental Conservation",
       "type": "Education",
-      "description": "Support initiatives to protect our planet and preserve natural habitats.",
+      "description": "Support initiatives to protect our planet and preserve natural habitats. Our environment is facing unprecedented challenges, from deforestation to climate change. The Environmental Conservation program works tirelessly to protect our planet's ecosystems, wildlife, and natural beauty. Your donation helps fund conservation projects, reforestation efforts, and educational programs that raise awareness about environmental issues. Together, we can safeguard our planet for future generations and ensure a sustainable and thriving world.",
       "price": 15,
       "color": "#FF444A"
     },
@@ -49,7 +49,7 @@
       "img": "https://i.ibb.co/0y1PhTD/Health.png",
       "title": "Medical Supplies for Clinics",
       "type": "Health",
-      "description": "Donate medical supplies to clinics in underserved areas to improve healthcare access.",
+      "description": "Donate medical supplies to clinics in underserved areas to improve healthcare access. Access to medical care and essential supplies is crucial for the well-being of communities in need. The Medical Supplies for Clinics program aims to provide clinics with vital medical equipment, medications, and supplies. Your donation can help save lives by ensuring that healthcare professionals have the tools they need to provide quality care. Join us in bridging the healthcare gap and making a positive impact on the health and lives of underserved populations.",
       "price": 40,
       "color": "#0052FF"
     },
@@ -58,7 +58,7 @@
       "img": "https://i.ibb.co/824hShh/Clothing.png",
       "title": "School Uniforms for Kids",
       "type": "Clothing",
-      "description": "Provide school uniforms to children in need to boost their confidence and attendance.",
+      "description": "Provide school uniforms to children in need to boost their confidence and attendance. For many children, attending school is a challenge due to the lack of proper school uniforms. The School Uniforms for Kids program aims to remove this barrier by providing school uniforms to children from disadvantaged backgrounds. Your donation can help boost their confidence, attendance, and educational opportunities. Together, we can empower these young learners to achieve their dreams.",
       "price": 20,
       "color": "#79C23F"
     },
@@ -67,7 +67,7 @@
       "img": "https://i.ibb.co/Vx2MDJy/Food.png",
       "title": "Meals for Elderly Citizens",
       "type": "Food",
-      "description": "Deliver nutritious meals to elderly citizens who may be homebound or isolated.",
+      "description": "Deliver nutritious meals to elderly citizens who may be homebound or isolated. Many elderly citizens face food insecurity, and the Meals for Elderly Citizens program is dedicated to addressing this issue. Your donation helps provide nutritious meals and companionship to elderly individuals who may be homebound or isolated. Together, we can ensure that our senior citizens receive the care and nourishment they deserve.",
       "price": 12,
       "color": "#F87147"
     },
@@ -76,7 +76,7 @@
       "img": "https://i.ibb.co/wdJ5fQ0/Education.png",
       "title": "Scholarships for Higher Education",
       "type": "Education",
-      "description": "Support talented students by providing scholarships for their higher education.",
+      "description": "Support talented students by providing scholarships for their higher education. Higher education is a pathway to success, and the Scholarships for Higher Education program aims to make it accessible to talented and deserving students. Your donation can help cover tuition fees, books, and other educational expenses, allowing these students to pursue their dreams and reach their full potential. Join us in empowering the next generation of leaders and innovators.",
       "price": 60,
       "color": "#FF444A"
     },
@@ -85,7 +85,7 @@
       "img": "https://i.ibb.co/wdJ5fQ0/Education.png",
       "title": "Wildlife Conservation",
       "type": "Education",
-      "description": "Protect endangered species and their habitats through wildlife conservation efforts.",
+      "description": "Protect endangered species and their habitats through wildlife conservation efforts. Our planet's wildlife is under threat from habitat loss, poaching, and climate change. The Wildlife Conservation program is dedicated to safeguarding endangered species and preserving their natural habitats. Your donation supports conservation initiatives, wildlife sanctuaries, and educational programs that raise awareness about the importance of biodiversity. Join us in protecting our planet's incredible wildlife and ensuring a harmonious coexistence with nature.",
       "price": 35,
       "color": "#FF444A"
     },
@@ -94,7 +94,7 @@
       "img": "https://i.ibb.co/0y1PhTD/Health.png",
       "title": "Emergency Relief Fund",
       "type": "Health",
-      "description": "Provide immediate assistance during disasters and emergencies.",
+      "description": "Provide immediate assistance during disasters and emergencies. When disasters strike, quick and effective relief is essential. The Emergency Relief Fund provides immediate assistance to those affected by natural disasters, conflicts, and emergencies. Your donation can help provide food, shelter, medical care, and other essential aid to those in crisis. Together, we can make a difference in the lives of those facing urgent and dire situations.",
       "price": 50,
       "color": "#0052FF"
     },
@@ -103,7 +103,7 @@
       "img": "https://i.ibb.co/Vx2MDJy/Food.png",
       "title": "Hunger Alleviation Program",
       "type": "Food",
-      "description": "Support programs that combat hunger and food insecurity in your community.",
+      "description": "Support programs that combat hunger and food insecurity in your community. Hunger is a pressing issue in many communities, and the Hunger Alleviation Program is dedicated to addressing this challenge. Your donation supports food banks, meal programs, and initiatives that provide nutritious meals to those in need. Together, we can make a significant impact in the fight against hunger and food insecurity in our community.",
       "price": 18,
       "color": "#F87147"
     }

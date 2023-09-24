@@ -1,4 +1,7 @@
 /* eslint-disable react/prop-types */
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const SingleCard = ({ card }) => {
 
@@ -8,6 +11,10 @@ const SingleCard = ({ card }) => {
         backgroundColor: color,
 
     };
+
+    const handleDonate = () => {
+        toast('Donated Successfully!');
+    }
 
     return (
         <div className='flex justify-center items-center mx-auto h-screen max-w-[1000px] mt-10'>
@@ -20,7 +27,8 @@ const SingleCard = ({ card }) => {
                             alt="ui/ux review check"
                         />
                         <div className="w-full bg-gray-800 absolute bottom-0 bg-opacity-60 p-8">
-                            <button className="btn text-white normal-case border-none" style={btnbg}>Donate ${price}</button>
+                            <button onClick={handleDonate} className="btn text-white normal-case border-none" style={btnbg}>Donate ${price}</button>
+                            <ToastContainer></ToastContainer>
                         </div>
                     </div>
                     <div className="p-6">

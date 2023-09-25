@@ -39,7 +39,7 @@ const SingleCard = ({ card }) => {
                 <div className="relative flex flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
                     <div className="relative m-0 overflow-hidden rounded-none bg-transparent bg-clip-border text-gray-700 shadow-none">
                         <img
-                            className="w-full h-[500px]"
+                            className="w-full mt-10 h-[200px] md:h-[350px] lg:h-[500px]"
                             src={img}
                             alt="ui/ux review check"
                         />

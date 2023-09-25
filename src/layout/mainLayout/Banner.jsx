@@ -24,7 +24,7 @@ const Banner = ({ setResults }) => {
     return (
 
         <div className="hero h-[70vh] mt-4" style={{ backgroundImage: 'url(./banner.jpg)' }}>
-            <div className="hero-overlay bg-white bg-opacity-95"></div>
+            <div className="hero-overlay bg-white bg-opacity-90"></div>
             <div className="hero-content text-center">
                 <div className="">
                     <h1 className="mb-10 text-4xl font-bold z-10 ">I Grow By Helping People In Need</h1>

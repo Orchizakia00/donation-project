@@ -27,7 +27,7 @@ const Donation = () => {
                 notFound ? <p className="h-[70vh] flex justify-center items-center">{notFound}</p> : (
                     <div className="mt-10">
 
-                        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 justify-center items-center h-screen mx-auto">
+                        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 justify-center items-center h-screen mx-auto mb-10">
                             {
                                 isShow ? 
                                 donation.map((card) => (

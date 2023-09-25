@@ -6,7 +6,7 @@ import swal from 'sweetalert';
 
 const SingleCard = ({ card }) => {
 
-    const { id, img, description, title, price, btn_color } = card;
+    const { img, description, title, price, btn_color } = card;
 
     const btnbg = {
         backgroundColor: btn_color,
@@ -28,13 +28,6 @@ const SingleCard = ({ card }) => {
             donatedArray.push(...donatedItems, card);
             localStorage.setItem('donated', JSON.stringify(donatedArray))
             swal("Congratulations!", "You have donated successfully!", "success");
-
-            // const isExist = donatedItems.find(card => card.id === id)
-            // if (!isExist) {
-            //     donatedArray.push(...donatedItems, card);
-            //     localStorage.setItem('donated', JSON.stringify(donatedArray))
-            //     swal("Good job!", "product added", "success");
-            // }
         }
 
 

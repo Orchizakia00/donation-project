@@ -34,12 +34,12 @@ const Donation = () => {
                                     <DonationCard key={card.id} card={card}></DonationCard>
                                 ))
                                     :
-                                    donation.slice(0, 2).map(card => (
+                                    donation.slice(0, 4).map(card => (
                                         <DonationCard key={card.id} card={card}></DonationCard>
                                     ))
                             }
                         </div>
-                        {donation.length > 2 && (
+                        {donation.length > 4 && (
                             <button
                                 onClick={() => setIsShow(!isShow)}
                                 className={'p-4 rounded-md my-4 bg-green-500 block mx-auto'}

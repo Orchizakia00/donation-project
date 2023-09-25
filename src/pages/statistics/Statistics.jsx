@@ -1,11 +1,12 @@
 import PieChart from "../../components/pieChart/PieChart";
 
+
 const Statistics = () => {
-    
+   
 
     return (
-        <div>
-            this is Statistics
+        <div className="w-full">
+            this is statistics
             <PieChart></PieChart>
         </div>
     );

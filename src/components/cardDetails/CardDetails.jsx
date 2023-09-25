@@ -10,7 +10,7 @@ const CardDetails = () => {
     const idInt = parseInt(id);
     const cards = useLoaderData();
     
-    // console.log(cards);
+    console.log(cards);
 
     useEffect(() => {
         const findCard = cards?.find(card => card.id === idInt);

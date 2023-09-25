@@ -15,7 +15,7 @@ const Donation = () => {
         }
 
         else {
-            setNotFound("No Data Found")
+            setNotFound("No Data Found");
         }
 
     }, [])
@@ -25,9 +25,9 @@ const Donation = () => {
         <div>
             {
                 notFound ? <p className="h-[70vh] flex justify-center items-center">{notFound}</p> : (
-                    <div className="">
+                    <div className="mt-10">
 
-                        <div className="grid grid-cols-2 gap-6 justify-center items-center h-screen">
+                        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 justify-center items-center h-screen mx-auto">
                             {
                                 isShow ? 
                                 donation.map((card) => (
@@ -42,7 +42,7 @@ const Donation = () => {
                         {donation.length > 4 && (
                             <button
                                 onClick={() => setIsShow(!isShow)}
-                                className={'p-4 rounded-md my-4 bg-green-500 block mx-auto'}
+                                className={'p-4 rounded-md my-4 bg-white btn normal-case block mx-auto'}
                             >
                                 {isShow ? '' : 'See All'}
                             </button>

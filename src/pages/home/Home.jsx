@@ -7,7 +7,7 @@ const Home = () => {
     // console.log(categories);
 
     return (
-        <div>
+        <div className="">
             <Banner></Banner>
             <Categories categories={categories}></Categories>
         </div>

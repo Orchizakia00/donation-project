@@ -4,10 +4,9 @@ import Banner from "../../layout/mainLayout/Banner";
 
 const Home = () => {
     const categories = useLoaderData();
-    // console.log(categories);
 
     return (
-        <div className="">
+        <div>
             <Banner></Banner>
             <Categories categories={categories}></Categories>
         </div>

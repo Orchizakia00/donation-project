@@ -6,10 +6,10 @@ import swal from 'sweetalert';
 
 const SingleCard = ({ card }) => {
 
-    const { id, img, description, title, price, color } = card;
+    const { id, img, description, title, price, btn_color } = card;
 
     const btnbg = {
-        backgroundColor: color,
+        backgroundColor: btn_color,
     };
 
     const handleDonate = () => {

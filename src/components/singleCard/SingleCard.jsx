@@ -1,19 +1,39 @@
 /* eslint-disable react/prop-types */
-import { ToastContainer, toast } from 'react-toastify';
+
 import 'react-toastify/dist/ReactToastify.css';
+import swal from 'sweetalert';
 
 
 const SingleCard = ({ card }) => {
 
-    const { img, description, title, price, color } = card;
+    const { id, img, description, title, price, color } = card;
 
     const btnbg = {
         backgroundColor: color,
-
     };
 
     const handleDonate = () => {
-        toast('Donated Successfully!');
+
+        const donatedArray = [];
+
+        const donatedItems = JSON.parse(localStorage.getItem('donated'));
+
+        if (donatedItems) {
+            donatedArray.push(card)
+            localStorage.setItem('donated', JSON.stringify(donatedArray))
+            swal("Congratulations!", "You have donated successfully!", "success");
+            console.log('clicked');
+        }
+        else {
+            const isExist = donatedItems.find(card => card.id === id)
+            if (!isExist) {
+                donatedArray.push(...donatedItems, card);
+                localStorage.setItem('donated', JSON.stringify(donatedArray))
+                // swal("Good job!", "product added", "success");
+            }
+        }
+
+
     }
 
     return (
@@ -28,7 +48,6 @@ const SingleCard = ({ card }) => {
                         />
                         <div className="w-full bg-gray-800 absolute bottom-0 bg-opacity-60 p-8">
                             <button onClick={handleDonate} className="btn text-white normal-case border-none" style={btnbg}>Donate ${price}</button>
-                            <ToastContainer></ToastContainer>
                         </div>
                     </div>
                     <div className="p-6">

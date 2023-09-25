@@ -7,10 +7,10 @@ const DonationCard = ({ card }) => {
     const { title, type, btn_color, img, price, text_color, bg_color, type_bg } = card;
 
     const btnbg = {
-        backgroundColor: btn_color,
+        backgroundColor: btn_color
     };
     const divbg = {
-        backgroundColor: bg_color,
+        backgroundColor: bg_color
     };
     const textColor = {
         color: text_color

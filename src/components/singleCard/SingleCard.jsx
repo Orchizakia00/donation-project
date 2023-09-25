@@ -18,19 +18,23 @@ const SingleCard = ({ card }) => {
 
         const donatedItems = JSON.parse(localStorage.getItem('donated'));
 
-        if (donatedItems) {
+        if (!donatedItems) {
             donatedArray.push(card)
             localStorage.setItem('donated', JSON.stringify(donatedArray))
             swal("Congratulations!", "You have donated successfully!", "success");
-            console.log('clicked');
+            // console.log('clicked');
         }
         else {
-            const isExist = donatedItems.find(card => card.id === id)
-            if (!isExist) {
-                donatedArray.push(...donatedItems, card);
-                localStorage.setItem('donated', JSON.stringify(donatedArray))
-                // swal("Good job!", "product added", "success");
-            }
+            donatedArray.push(...donatedItems, card);
+            localStorage.setItem('donated', JSON.stringify(donatedArray))
+            swal("Congratulations!", "You have donated successfully!", "success");
+
+            // const isExist = donatedItems.find(card => card.id === id)
+            // if (!isExist) {
+            //     donatedArray.push(...donatedItems, card);
+            //     localStorage.setItem('donated', JSON.stringify(donatedArray))
+            //     swal("Good job!", "product added", "success");
+            // }
         }
 
 

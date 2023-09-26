@@ -11,9 +11,8 @@ const PieChart = ({ numberOfDonations }) => {
         { name: "Total Donation", value: availableDonations },
     ];
 
-    const colors = ['#00C49F', '#FF444A']; // Define your custom colors
+    const colors = ['#00C49F', '#FF444A']; 
 
-    // Calculate percentages for each segment
     const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent }) => {
         const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
         const x = cx + radius * Math.cos(-midAngle * (Math.PI / 180));
@@ -33,12 +32,14 @@ const PieChart = ({ numberOfDonations }) => {
             <PC width={400} height={400}>
                 <Pie
                     dataKey="value"
-                    isAnimationActive={false}
+                    isAnimationActive={true}
                     data={data}
                     cx={200}
                     cy={200}
                     outerRadius={120}
                     label={renderCustomizedLabel}
+                    // Remove strokes
+                    strokeWidth={0} // Set strokeWidth to 0
                 >
                     {data.map((entry, index) => (
                         <Cell key={`cell-${index}`} fill={colors[index]} />

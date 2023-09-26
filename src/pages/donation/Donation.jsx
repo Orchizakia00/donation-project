@@ -31,35 +31,34 @@ const Donation = () => {
 
 
     return (
-        <div>
+        <div className="h-fit">
             {
                 notFound ? <p className="h-[70vh] flex justify-center items-center">{notFound}</p> : (
-                    <div className="mt-10">
 
-                        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 justify-center items-center h-screen mx-auto mb-20">
-                            {
-                                isShow ?
-                                    donation.map((card) => (
-                                        <DonationCard key={card.id} card={card}></DonationCard>
-                                    ))
-                                    :
-                                    donation.slice(0, 4).map(card => (
-                                        <DonationCard key={card.id} card={card}></DonationCard>
-                                    ))
-                            }
-                        </div>
-
-                        {donation.length > 4 && !isShow && (
-                            <button
-                                onClick={handleSeeAll}
-                                className="p-4 rounded-md my-4 bg-green-600 text-white btn normal-case block mx-auto"
-                            >
-                                See All
-                            </button>
-                        )}
-
+                    <div className="grid grid-cols-1 md:grid-cols-1 mt-10 lg:grid-cols-2 gap-6 justify-center items-center h-screen mx-auto mb-20">
+                        {
+                            isShow ?
+                                donation.map((card) => (
+                                    <DonationCard key={card.id} card={card}></DonationCard>
+                                ))
+                                :
+                                donation.slice(0, 4).map(card => (
+                                    <DonationCard key={card.id} card={card}></DonationCard>
+                                ))
+                        }
                     </div>
+
                 )}
+            <div className="mt-96 lg:mt-4">
+                {donation.length > 4 && !isShow && (
+                    <button
+                        onClick={handleSeeAll}
+                        className="p-4 rounded-md lg:my-4 bg-green-600 text-white btn normal-case block mx-auto"
+                    >
+                        See All
+                    </button>
+                )}
+            </div>
         </div>
     );
 };

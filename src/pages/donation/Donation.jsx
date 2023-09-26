@@ -8,7 +8,7 @@ const Donation = () => {
     const [isShow, setIsShow] = useState(false);
     // const [numberOfDonations, setNumberOfDonations] = useState(0);
 
-    const { setNumberOfDonations } = useDonationContext(); 
+    const { setNumberOfDonations } = useDonationContext();
 
     useEffect(() => {
 
@@ -25,6 +25,10 @@ const Donation = () => {
 
     }, [setNumberOfDonations])
 
+    const handleSeeAll = () => {
+        setIsShow(true); // Show all items when the button is clicked
+    };
+
 
     return (
         <div>
@@ -32,24 +36,25 @@ const Donation = () => {
                 notFound ? <p className="h-[70vh] flex justify-center items-center">{notFound}</p> : (
                     <div className="mt-10">
 
-                        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 justify-center items-center h-screen mx-auto mb-10">
+                        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 justify-center items-center h-screen mx-auto mb-20">
                             {
-                                isShow ? 
-                                donation.map((card) => (
-                                    <DonationCard key={card.id} card={card}></DonationCard>
-                                ))
+                                isShow ?
+                                    donation.map((card) => (
+                                        <DonationCard key={card.id} card={card}></DonationCard>
+                                    ))
                                     :
                                     donation.slice(0, 4).map(card => (
                                         <DonationCard key={card.id} card={card}></DonationCard>
                                     ))
                             }
                         </div>
-                        {donation.length > 4 && (
+
+                        {donation.length > 4 && !isShow && (
                             <button
-                                onClick={() => setIsShow(!isShow)}
-                                className={'p-4 rounded-md my-4 bg-white btn normal-case block mx-auto'}
+                                onClick={handleSeeAll}
+                                className="p-4 rounded-md my-4 bg-green-600 text-white btn normal-case block mx-auto"
                             >
-                                {isShow ? '' : 'See All'}
+                                See All
                             </button>
                         )}
 

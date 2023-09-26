@@ -37,7 +37,7 @@ const PieChart = ({ numberOfDonations }) => {
                     data={data}
                     cx={200}
                     cy={200}
-                    outerRadius={80}
+                    outerRadius={120}
                     label={renderCustomizedLabel}
                 >
                     {data.map((entry, index) => (
@@ -47,12 +47,12 @@ const PieChart = ({ numberOfDonations }) => {
             </PC>
             <div className='flex gap-10 justify-center mb-6'>
                 <div className='flex gap-2'>
-                    <div className='bg-[#00C49F] w-6 h-6 rounded-full text-[#00C49F]'>.</div>
-                    <p>Your Donation</p>
+                    <div className='bg-[#00C49F] w-7 h-7 rounded-full text-[#00C49F]'>.</div>
+                    <p className='text-lg'>Your Donation</p>
                 </div>
                 <div className='flex gap-2'>
-                    <div className='bg-[#FF444A] w-6 h-6 rounded-full text-[#FF444A]'>.</div>
-                    <p>Total Donation</p>
+                    <div className='bg-[#FF444A] w-7 h-7 rounded-full text-[#FF444A]'>.</div>
+                    <p className='text-lg'>Total Donation</p>
                 </div>
             </div>
         </div>

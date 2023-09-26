@@ -7,7 +7,7 @@ const Category = ({ category }) => {
     const { id, title, type, bg_color, text_color, img, type_bg } = category;
 
     const divbg = {
-        backgroundColor: bg_color,
+        backgroundColor: bg_color
     };
     const textColor = {
         color: text_color

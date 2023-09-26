@@ -1,29 +1,62 @@
 /* eslint-disable react/prop-types */
-import { PieChart as PC, Pie, Sector, Cell, ResponsiveContainer } from 'recharts';
 
+import { PieChart as PC, Pie, Cell } from 'recharts';
 
-const PieChart = ({ card }) => {
+const PieChart = ({ numberOfDonations }) => {
+    const totalDonations = 12;
+    const availableDonations = totalDonations - numberOfDonations;
 
     const data = [
-        { name: 'Group A', value: 400 },
-        { name: 'Group B', value: 300 },
-        { name: 'Group C', value: 300 },
-        { name: 'Group D', value: 200 },
+        { name: "Your Donation", value: numberOfDonations || 0 },
+        { name: "Total Donation", value: availableDonations },
     ];
 
-    const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
+    const colors = ['#00C49F', '#FF444A']; // Define your custom colors
 
-    const RADIAN = Math.PI / 180;
-    const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent, index }) => {
+    // Calculate percentages for each segment
+    const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent }) => {
         const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
-        const x = cx + radius * Math.cos(-midAngle * RADIAN);
-        const y = cy + radius * Math.sin(-midAngle * RADIAN);
+        const x = cx + radius * Math.cos(-midAngle * (Math.PI / 180));
+        const y = cy + radius * Math.sin(-midAngle * (Math.PI / 180));
 
         return (
-            <text x={x} y={y} fill="white" textAnchor={x > cx ? 'start' : 'end'} dominantBaseline="central">
-                {`${(percent * 100).toFixed(0)}%`}
-            </text>
+            <g>
+                <text x={x} y={y} fill="white" textAnchor="middle" dominantBaseline="central">
+                    {`${(percent * 100).toFixed(0)}%`}
+                </text>
+            </g>
         );
     };
-}
+
+    return (
+        <div>
+            <PC width={400} height={400}>
+                <Pie
+                    dataKey="value"
+                    isAnimationActive={false}
+                    data={data}
+                    cx={200}
+                    cy={200}
+                    outerRadius={80}
+                    label={renderCustomizedLabel}
+                >
+                    {data.map((entry, index) => (
+                        <Cell key={`cell-${index}`} fill={colors[index]} />
+                    ))}
+                </Pie>
+            </PC>
+            <div className='flex gap-10 justify-center mb-6'>
+                <div className='flex gap-2'>
+                    <div className='bg-[#00C49F] w-6 h-6 rounded-full text-[#00C49F]'>.</div>
+                    <p>Your Donation</p>
+                </div>
+                <div className='flex gap-2'>
+                    <div className='bg-[#FF444A] w-6 h-6 rounded-full text-[#FF444A]'>.</div>
+                    <p>Total Donation</p>
+                </div>
+            </div>
+        </div>
+    );
+};
+
 export default PieChart;

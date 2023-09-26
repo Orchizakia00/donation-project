@@ -1,13 +1,15 @@
+/* eslint-disable react/prop-types */
+
+import { useDonationContext } from "../../components/DonationContext/DonationContext";
 import PieChart from "../../components/pieChart/PieChart";
 
-
 const Statistics = () => {
-   
+
+    const { numberOfDonations } = useDonationContext();
 
     return (
-        <div className="w-full">
-            this is statistics
-            <PieChart></PieChart>
+        <div className="flex justify-center items-center">
+            <PieChart numberOfDonations={numberOfDonations}></PieChart>
         </div>
     );
 };

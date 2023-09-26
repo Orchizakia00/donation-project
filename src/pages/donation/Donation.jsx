@@ -1,10 +1,14 @@
 import { useEffect, useState } from "react";
 import DonationCard from "../../components/donationCard/DonationCard";
+import { useDonationContext } from "../../components/DonationContext/DonationContext";
 
 const Donation = () => {
     const [donation, setDonation] = useState([]);
     const [notFound, setNotFound] = useState(false);
     const [isShow, setIsShow] = useState(false);
+    // const [numberOfDonations, setNumberOfDonations] = useState(0);
+
+    const { setNumberOfDonations } = useDonationContext(); 
 
     useEffect(() => {
 
@@ -12,13 +16,14 @@ const Donation = () => {
 
         if (donatedItems) {
             setDonation(donatedItems);
+            setNumberOfDonations(donatedItems.length);
         }
 
         else {
             setNotFound("No Data Found");
         }
 
-    }, [])
+    }, [setNumberOfDonations])
 
 
     return (

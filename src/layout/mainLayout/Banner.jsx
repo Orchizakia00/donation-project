@@ -21,12 +21,8 @@ const Banner = ({ setResults }) => {
         fetchData(value)
     };
 
-    const handleSearch = () => {
-        
-    }
 
     return (
-
         <div className="hero h-[70vh] mt-4" style={{ backgroundImage: 'url(./banner.jpg)' }}>
             <div className="hero-overlay bg-white bg-opacity-90"></div>
             <div className="hero-content text-center">
@@ -37,7 +33,7 @@ const Banner = ({ setResults }) => {
                             onChange={(e) => handleChange(e.target.value)}
                             type="text" placeholder="Search here" className="input w-full max-w-sm rounded-r-none" />
                         <div className="">
-                            <button onClick={handleSearch} className="btn bg-red-500 text-white normal-case border-none rounded-l-none">Search</button>
+                            <button className="btn bg-red-500 text-white normal-case border-none rounded-l-none">Search</button>
                         </div>
                     </div>
                 </div>
